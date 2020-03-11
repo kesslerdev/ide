@@ -6,6 +6,6 @@ COPY package*.json ./
 
 RUN yarn
 
-RUN yarn theia build
+RUN yarn build
 
-CMD yarn theia start /my-workspace --hostname 0.0.0.0 --port 808
+CMD yarn theia start /my-workspace --hostname 0.0.0.0 --port 8080
