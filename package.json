@@ -1,10 +1,21 @@
 {
   "private": true,
+  "theia": {
+    "frontend": {
+      "config": {
+        "applicationName": "Theia Go Example",
+        "preferences": {
+          "workbench.iconTheme": "material-icon-theme"
+        }
+      }
+    }
+  },
   "dependencies": {
     "@theia/callhierarchy": "next",
     "@theia/file-search": "next",
     "@theia/git": "next",
     "@theia/json": "next",
+    "@theia/process": "next",
     "@theia/markers": "next",
     "@theia/messages": "next",
     "@theia/mini-browser": "next",
@@ -26,11 +37,11 @@
     "clean": "theia clean",
     "build": "theia build --mode development",
     "download:plugins": "theia download:plugins",
-    "start": "theia start --plugins=local-dir:../../plugins"
+    "start": "theia start --plugins=local-dir:./plugins"
   },
   "theiaPluginsDir": "plugins",
   "theiaPlugins": {
-    "vscode-material-icon-theme": "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/PKief/vsextensions/material-icon-theme/4.0.1/vspackage",
+    "vscode-material-icon-theme": "https://PKief.gallery.vsassets.io/_apis/public/gallery/publisher/PKief/extension/material-icon-theme/4.0.1/assetbyname/Microsoft.VisualStudio.Services.VSIXPackage?#.vsix",
     "vscode-builtin-css": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/css-1.39.1-prel.vsix",
     "vscode-builtin-html": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/html-1.39.1-prel.vsix",
     "vscode-builtin-javascript": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/javascript-1.39.1-prel.vsix",
