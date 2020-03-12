@@ -3,3 +3,4 @@ src-gen
 lib
 webpack.config.js
 gen-webpack.config.js
+plugins

@@ -10,11 +10,13 @@
     "@theia/mini-browser": "next",
     "@theia/navigator": "next",
     "@theia/outline-view": "next",
-    "@theia/plugin-ext-vscode": "next",
     "@theia/preferences": "next",
     "@theia/preview": "next",
     "@theia/search-in-workspace": "next",
-    "@theia/terminal": "next"
+    "@theia/terminal": "next",
+    "@theia/plugin-dev": "next",
+    "@theia/plugin-ext": "next",
+    "@theia/plugin-ext-vscode": "next"
   },
   "devDependencies": {
     "@theia/cli": "next"
@@ -23,10 +25,12 @@
     "prepare": "yarn run clean && yarn build && yarn run download:plugins",
     "clean": "theia clean",
     "build": "theia build --mode development",
-    "download:plugins": "theia download:plugins"
+    "download:plugins": "theia download:plugins",
+    "start": "theia start --plugins=local-dir:../../plugins"
   },
   "theiaPluginsDir": "plugins",
   "theiaPlugins": {
+    "vscode-material-icon-theme": "https://marketplace.visualstudio.com/_apis/public/gallery/publishers/PKief/vsextensions/material-icon-theme/4.0.1/vspackage",
     "vscode-builtin-css": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/css-1.39.1-prel.vsix",
     "vscode-builtin-html": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/html-1.39.1-prel.vsix",
     "vscode-builtin-javascript": "https://github.com/theia-ide/vscode-builtin-extensions/releases/download/v1.39.1-prel/javascript-1.39.1-prel.vsix",
