@@ -3,9 +3,15 @@
   "theia": {
     "frontend": {
       "config": {
-        "applicationName": "Theia Go Example",
+        "applicationName": "Kessler's IDE",
         "preferences": {
-          "workbench.iconTheme": "material-icon-theme"
+          "workbench.iconTheme": "material-icon-theme",
+          "git.decorations.colors": true,
+          "material-icon-theme.files.associations": {
+            "**.gitignore": "git",
+            "**.gitconfig": "git",
+            "**.gitconfigured": "git"
+          }
         }
       }
     }
