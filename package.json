@@ -1,6 +1,7 @@
 {
   "private": true,
   "theia": {
+    "target": "browser",
     "frontend": {
       "config": {
         "applicationName": "Kessler's IDE",
